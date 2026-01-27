@@ -1,9 +1,11 @@
-# Portfolio Website – Swetha Papani
+how to remove tht# Portfolio Website – Swetha Papani
 
-This is my personal portfolio project, designed using HTML/CSS and hosted on [AWS S3](http://swetha-portfolio-2025.s3-website-ap-south-1.amazonaws.com).
+This is my personal portfolio project, designed using HTML/CSS and hosted on [AWS S3](https://swetha-papani2005.github.io
+).
 
 ## 🔗 Live Demo
-👉 [Visit My Portfolio](http://swetha-portfolio-2025.s3-website.ap-south-1.amazonaws.com)
+👉 [Visit My Portfolio](https://swetha-papani2005.github.io
+)
 
 ## 📁 Contents
 - index.html
@@ -13,4 +15,4 @@ This is my personal portfolio project, designed using HTML/CSS and hosted on [AW
 ## 📌 Skills Used
 - HTML
 - CSS
-- AWS S3 (Static Website Hosting)
+- JavaScript
