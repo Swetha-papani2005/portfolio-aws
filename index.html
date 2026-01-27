@@ -1,54 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Swetha Portfolio</title>
+  <meta charset="UTF-8" />
+  <title>Reddy Swetha Papani | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <meta name="description" content="Reddy Swetha Papani - B.Tech CSE Student. Portfolio showcasing projects, skills, and certifications." />
+  <meta name="keywords" content="Swetha Papani, Portfolio, CSE Student, DevOps, AWS, AI Projects" />
+  <meta name="author" content="Reddy Swetha Papani" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Reddy Swetha Papani | Portfolio" />
+  <meta property="og:description" content="B.Tech CSE student portfolio with AI, Cloud, and Web projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://swetha.github.io/" />
+  <meta property="og:image" content="https://swetha.github.io/swetha.jpg" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
-      background: 
-        linear-gradient(to bottom right, rgba(255, 255, 255, 0.85), rgba(224, 247, 250, 0.85)),
-        url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      text-align: center;
-      padding: 60px;
-      color: #2c3e50;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: #fff;
+      height: 100vh;
     }
-    img {
-      border-radius: 50%;
-      width: 180px;
-      height: 180px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 50px;
+      background: rgba(0,0,0,0.3);
     }
-    h1 {
-      font-size: 32px;
+
+    nav h2 { color: #00d4ff; }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
     }
-    p {
-      font-size: 18px;
-      color: #333;
+
+    nav a:hover { color: #00d4ff; }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 100px;
+      flex-wrap: wrap;
     }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #007acc;
-      color: white;
+
+    .left h1 { font-size: 36px; }
+    .left h2 { color: #00d4ff; margin: 10px 0; }
+
+    .left p {
+      max-width: 520px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .social-icons a {
+      color: #00d4ff;
+      font-size: 26px;
+      margin-right: 15px;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 10px 30px;
+      background: #00d4ff;
       border: none;
       border-radius: 6px;
+      font-weight: bold;
       cursor: pointer;
     }
-    button:hover {
-      background-color: #005f99;
+
+    .right img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 6px solid #00d4ff;
+    }
+
+    @media(max-width:768px){
+      .container { flex-direction: column; text-align: center; padding: 40px 20px; }
     }
   </style>
 </head>
+
 <body>
 
-  <img src="swetha.jpg" alt="Swetha's Photo">
-  <h1>Papani Reddy Swetha</h1>
-  <p>B.Tech CSE Student | Aspiring DevOps Engineer</p>
-  <button onclick="location.href='portfolio.html'">View Portfolio</button>
+<nav>
+  <h2><i class="fas fa-user"></i> Portfolio</h2>
+  <div>
+    <a href="#"><i class="fas fa-home"></i> Home</a>
+    <a href="portfolio.html"><i class="fas fa-id-card"></i> Profile</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="left">
+    <h1>Hello, I'm</h1>
+    <h2>Reddy Swetha Papani</h2>
+    <p>
+      Enthusiastic and dedicated B.Tech Computer Science student at Saveetha School of Engineering with strong
+      fundamentals in programming and a passion for AI, cloud computing.
+      Actively seeking internship opportunities to apply and enhance technical skills.
+    </p>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/papani-reddy-swetha" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Swetha-papani2005" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <button class="btn" onclick="location.href='portfolio.html'">
+      <i class="fas fa-arrow-right"></i> View Portfolio
+    </button>
+  </div>
+
+  <div class="right">
+    <img src="swetha.jpg" alt="Swetha Photo">
+  </div>
+</div>
 
 </body>
 </html>
